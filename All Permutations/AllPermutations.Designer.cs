@@ -35,11 +35,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbChars = new System.Windows.Forms.TextBox();
             this.btnGo = new System.Windows.Forms.Button();
+            this.wc = new System.Windows.Forms.Label();
             this.twc = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.wc = new System.Windows.Forms.Label();
-            this.lblT1 = new System.Windows.Forms.Label();
             this.lblT2 = new System.Windows.Forms.Label();
+            this.lblT1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.rtbWords = new System.Windows.Forms.RichTextBox();
             this.tbMain.SuspendLayout();
@@ -123,15 +123,29 @@
             // 
             // btnGo
             // 
+            this.btnGo.BackColor = System.Drawing.Color.White;
             this.btnGo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGo.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.btnGo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGo.Location = new System.Drawing.Point(311, 3);
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(38, 27);
             this.btnGo.TabIndex = 2;
-            this.btnGo.Text = "Go";
-            this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Text = "GO";
+            this.btnGo.UseVisualStyleBackColor = false;
             this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
+            // 
+            // wc
+            // 
+            this.wc.AutoSize = true;
+            this.wc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wc.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wc.Location = new System.Drawing.Point(461, 0);
+            this.wc.Name = "wc";
+            this.wc.Size = new System.Drawing.Size(206, 33);
+            this.wc.TabIndex = 4;
+            this.wc.Text = "Unique Permutations: 0";
+            this.wc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // twc
             // 
@@ -162,17 +176,17 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(884, 20);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // wc
+            // lblT2
             // 
-            this.wc.AutoSize = true;
-            this.wc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wc.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wc.Location = new System.Drawing.Point(461, 0);
-            this.wc.Name = "wc";
-            this.wc.Size = new System.Drawing.Size(206, 33);
-            this.wc.TabIndex = 4;
-            this.wc.Text = "Unique Permutations: 0";
-            this.wc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblT2.AutoSize = true;
+            this.lblT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblT2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblT2.Location = new System.Drawing.Point(224, 0);
+            this.lblT2.Name = "lblT2";
+            this.lblT2.Size = new System.Drawing.Size(215, 20);
+            this.lblT2.TabIndex = 6;
+            this.lblT2.Text = "Time (Print): 0 Ticks";
+            this.lblT2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblT1
             // 
@@ -185,18 +199,6 @@
             this.lblT1.TabIndex = 5;
             this.lblT1.Text = "Time (Permute): 0 Ticks";
             this.lblT1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblT2
-            // 
-            this.lblT2.AutoSize = true;
-            this.lblT2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblT2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblT2.Location = new System.Drawing.Point(224, 0);
-            this.lblT2.Name = "lblT2";
-            this.lblT2.Size = new System.Drawing.Size(215, 20);
-            this.lblT2.TabIndex = 6;
-            this.lblT2.Text = "Time (Print): 0 Ticks";
-            this.lblT2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // linkLabel1
             // 
@@ -214,8 +216,10 @@
             // 
             // rtbWords
             // 
+            this.rtbWords.BackColor = System.Drawing.Color.Black;
             this.rtbWords.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbWords.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbWords.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbWords.ForeColor = System.Drawing.Color.Lime;
             this.rtbWords.Location = new System.Drawing.Point(3, 42);
             this.rtbWords.Name = "rtbWords";
             this.rtbWords.Size = new System.Drawing.Size(884, 426);
@@ -226,8 +230,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(890, 497);
             this.Controls.Add(this.tbMain);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AllPermutations";
             this.Text = "All Permutations";
