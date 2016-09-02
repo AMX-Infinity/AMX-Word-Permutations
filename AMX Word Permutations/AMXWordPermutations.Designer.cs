@@ -1,6 +1,6 @@
-﻿namespace All_Permutations
+﻿namespace AMX_Word_Permutations
 {
-    partial class AllPermutations
+    partial class AMXWordPermutations
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllPermutations));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AMXWordPermutations));
             this.tbMain = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.cc = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@
             this.tbMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tbMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87F));
             this.tbMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tbMain.Size = new System.Drawing.Size(890, 497);
+            this.tbMain.Size = new System.Drawing.Size(966, 565);
             this.tbMain.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -84,7 +84,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(884, 33);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(960, 39);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // cc
@@ -92,9 +92,9 @@
             this.cc.AutoSize = true;
             this.cc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cc.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cc.Location = new System.Drawing.Point(355, 0);
+            this.cc.Location = new System.Drawing.Point(387, 0);
             this.cc.Name = "cc";
-            this.cc.Size = new System.Drawing.Size(100, 33);
+            this.cc.Size = new System.Drawing.Size(109, 39);
             this.cc.TabIndex = 3;
             this.cc.Text = "Characters: 0";
             this.cc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,7 +106,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 33);
+            this.label1.Size = new System.Drawing.Size(138, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter characters:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -114,11 +114,11 @@
             // tbChars
             // 
             this.tbChars.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbChars.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbChars.Location = new System.Drawing.Point(135, 3);
+            this.tbChars.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tbChars.Location = new System.Drawing.Point(147, 3);
             this.tbChars.MaxLength = 8;
             this.tbChars.Name = "tbChars";
-            this.tbChars.Size = new System.Drawing.Size(170, 27);
+            this.tbChars.Size = new System.Drawing.Size(186, 29);
             this.tbChars.TabIndex = 1;
             // 
             // btnGo
@@ -127,9 +127,9 @@
             this.btnGo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnGo.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.btnGo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGo.Location = new System.Drawing.Point(311, 3);
+            this.btnGo.Location = new System.Drawing.Point(339, 3);
             this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(38, 27);
+            this.btnGo.Size = new System.Drawing.Size(42, 33);
             this.btnGo.TabIndex = 2;
             this.btnGo.Text = "GO";
             this.btnGo.UseVisualStyleBackColor = false;
@@ -140,9 +140,9 @@
             this.wc.AutoSize = true;
             this.wc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.wc.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wc.Location = new System.Drawing.Point(461, 0);
+            this.wc.Location = new System.Drawing.Point(502, 0);
             this.wc.Name = "wc";
-            this.wc.Size = new System.Drawing.Size(206, 33);
+            this.wc.Size = new System.Drawing.Size(224, 39);
             this.wc.TabIndex = 4;
             this.wc.Text = "Unique Permutations: 0";
             this.wc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -152,9 +152,9 @@
             this.twc.AutoSize = true;
             this.twc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.twc.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.twc.Location = new System.Drawing.Point(673, 0);
+            this.twc.Location = new System.Drawing.Point(732, 0);
             this.twc.Name = "twc";
-            this.twc.Size = new System.Drawing.Size(208, 33);
+            this.twc.Size = new System.Drawing.Size(225, 39);
             this.twc.TabIndex = 5;
             this.twc.Text = "Total Permutations: 0";
             this.twc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,11 +169,11 @@
             this.tableLayoutPanel2.Controls.Add(this.lblT1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.linkLabel1, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 474);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 539);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(884, 20);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(960, 23);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // lblT2
@@ -181,9 +181,9 @@
             this.lblT2.AutoSize = true;
             this.lblT2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblT2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblT2.Location = new System.Drawing.Point(224, 0);
+            this.lblT2.Location = new System.Drawing.Point(243, 0);
             this.lblT2.Name = "lblT2";
-            this.lblT2.Size = new System.Drawing.Size(215, 20);
+            this.lblT2.Size = new System.Drawing.Size(234, 23);
             this.lblT2.TabIndex = 6;
             this.lblT2.Text = "Time (Print): 0 Ticks";
             this.lblT2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -195,7 +195,7 @@
             this.lblT1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblT1.Location = new System.Drawing.Point(3, 0);
             this.lblT1.Name = "lblT1";
-            this.lblT1.Size = new System.Drawing.Size(215, 20);
+            this.lblT1.Size = new System.Drawing.Size(234, 23);
             this.lblT1.TabIndex = 5;
             this.lblT1.Text = "Time (Permute): 0 Ticks";
             this.lblT1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -205,9 +205,9 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(445, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(483, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(436, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(474, 23);
             this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Copyright © 2016 Afaan Bilal, AMX Infinity (https://www.amxinfinity.ml)";
@@ -220,23 +220,23 @@
             this.rtbWords.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtbWords.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbWords.ForeColor = System.Drawing.Color.Lime;
-            this.rtbWords.Location = new System.Drawing.Point(3, 42);
+            this.rtbWords.Location = new System.Drawing.Point(3, 48);
             this.rtbWords.Name = "rtbWords";
-            this.rtbWords.Size = new System.Drawing.Size(884, 426);
+            this.rtbWords.Size = new System.Drawing.Size(960, 485);
             this.rtbWords.TabIndex = 3;
             this.rtbWords.Text = "";
             // 
-            // AllPermutations
+            // AMXWordPermutations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(890, 497);
+            this.ClientSize = new System.Drawing.Size(966, 565);
             this.Controls.Add(this.tbMain);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "AllPermutations";
-            this.Text = "All Permutations";
+            this.Name = "AMXWordPermutations";
+            this.Text = "AMX Word Permutations";
             this.tbMain.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

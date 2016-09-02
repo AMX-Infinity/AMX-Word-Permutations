@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("All Permutations")]
+[assembly: AssemblyTitle("AMX Word Permutations")]
 [assembly: AssemblyDescription("Display all possible permutations for a set of characters.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("AMX Infinity")]
-[assembly: AssemblyProduct("All Permutations")]
+[assembly: AssemblyProduct("AMX Word Permutations")]
 [assembly: AssemblyCopyright("© 2016 Afaan Bilal, AMX Infinity")]
 [assembly: AssemblyTrademark("AMX Infinity")]
 [assembly: AssemblyCulture("")]

@@ -17,11 +17,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace All_Permutations
+namespace AMX_Word_Permutations
 {
-    public partial class AllPermutations : Form
+    public partial class AMXWordPermutations : Form
     {
-        public AllPermutations()
+        public AMXWordPermutations()
         {
             InitializeComponent();
         }

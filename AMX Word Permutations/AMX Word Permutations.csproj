@@ -7,8 +7,8 @@
     <ProjectGuid>{AAFE73A7-79F6-4C4B-85A7-A6E97066251B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>All_Permutations</RootNamespace>
-    <AssemblyName>All Permutations</AssemblyName>
+    <RootNamespace>AMX_Word_Permutations</RootNamespace>
+    <AssemblyName>AMX Word Permutations</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -47,16 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllPermutations.cs">
+    <Compile Include="AMXWordPermutations.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllPermutations.Designer.cs">
-      <DependentUpon>AllPermutations.cs</DependentUpon>
+    <Compile Include="AMXWordPermutations.Designer.cs">
+      <DependentUpon>AMXWordPermutations.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AllPermutations.resx">
-      <DependentUpon>AllPermutations.cs</DependentUpon>
+    <EmbeddedResource Include="AMXWordPermutations.resx">
+      <DependentUpon>AMXWordPermutations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

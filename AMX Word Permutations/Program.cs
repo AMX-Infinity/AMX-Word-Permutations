@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace All_Permutations
+namespace AMX_Word_Permutations
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace All_Permutations
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AllPermutations());
+            Application.Run(new AMXWordPermutations());
         }
     }
 }
