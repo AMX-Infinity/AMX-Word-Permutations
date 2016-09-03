@@ -25,34 +25,20 @@ namespace AMX_Word_Permutations
         {
             InitializeComponent();
         }
-         
-        private string base_convert(string number, int fromBase, int toBase)
+
+        private string base_convert(long number, short fromBase, short toBase)
         {
-            StringBuilder res = new StringBuilder();
-            long n = Int32.Parse(number);
-            if (fromBase > toBase)
+            if (fromBase != 10 && toBase != 10) throw new NotImplementedException();
+            long result = 0;
+            int i = 0;
+
+            while (number > 0)
             {
-                while (n > 0)
-                {
-                    res.Append((char)(n % toBase + '0'));
-                    n /= toBase;
-                }
-                string r = res.ToString();
-                char[] cr = r.ToCharArray();
-                Array.Reverse(cr);
-                StringBuilder rcb = new StringBuilder();
-                foreach (char c in cr)
-                    rcb.Append(c);
-                return rcb.ToString();
+                result += (number % toBase) * (long)Math.Pow(fromBase, i++);
+                number /= toBase;
             }
-            else
-            {
-                long ret = 0;
-                for (int i = number.Length - 1, j = 0; i >= 0; i--, j++)
-                    ret += (int)(number[i] - '0') * (int)Math.Pow((double)fromBase, (double)j);
-                res.Append(ret);
-            }
-            return res.ToString();
+
+            return result.ToString();
         }
         
         private bool inArrayBin<T>(T[] arr, T s, long ubound)
@@ -112,10 +98,10 @@ namespace AMX_Word_Permutations
                     cur_word.Append(chars[key]);
                 }
 
-                keys = base_convert(keys, lcount, 10);
+                keys = base_convert(long.Parse(keys), (short)lcount, 10);
                 long keys_l = Int32.Parse(keys);
                 keys_l++;
-                keys = base_convert(keys_l.ToString(), 10, lcount);
+                keys = base_convert(keys_l, 10, (short)lcount);
 
                 if (keys.Length < lcount)
                 {
