@@ -4,8 +4,7 @@ AMX Word Permutations
 Author: **Afaan Bilal ([@AfaanBilal](https://github.com/AfaanBilal))**   
 Author URL: **[Google+](https://google.com/+AfaanBilal)**
 
-[AMX Infinity](https://www.amxinfinity.ml)  
-[Afaan Bilal](https://afaan.ml)
+[Afaan Bilal](https://afaan.dev)
 
 ## Introduction
 **AMX Word Permutations** is a windows application that display all possible permutations of a set of characters. 
